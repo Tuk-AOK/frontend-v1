@@ -216,7 +216,7 @@ export default function BasicSelect() {
         console.log(error);
       })
     })();
-  })
+  },[currentProject]);
   
 
   const [projects, setProjects] = useState<Project[]>([]);
