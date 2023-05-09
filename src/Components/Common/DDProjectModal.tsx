@@ -8,8 +8,8 @@ import Modal from '@mui/material/Modal';
 import {PropsWithChildren} from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from './Redux/Store';
-import { setProjectUuid } from './Redux/ProjectSlice';  
+import { RootState } from '../../Stores/Store';
+import { setProjectUuid } from '../../Hooks/ProjectSlice';  
 
 interface projectResponse{
   status: number;

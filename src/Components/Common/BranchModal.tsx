@@ -7,7 +7,7 @@ import Modal from '@mui/material/Modal';
 import {PropsWithChildren} from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from 'react-redux';
-import { setBranchUuid } from './Redux/BranchSlice';
+import { setBranchUuid } from '../../Hooks/BranchSlice';
 import axios from 'axios';
 
 interface BranchResponse {

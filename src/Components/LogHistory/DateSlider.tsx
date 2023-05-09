@@ -6,15 +6,15 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
 import { Typography, Button,IconButton } from '@mui/material';
-import BasicList from '../Components/List';
-import Profile from '../Components/Profile';
+import BasicList from '../Common/List';
+import Profile from '../Common/Profile';
 import styled from 'styled-components';
-import SelectBar from '../Components/SelectBar';
+import SelectBar from '../Common/SelectBar';
 import EditIcon from '@mui/icons-material/Edit';
-import DiscreteSlider from '../Components/Slider';
-import FileList from '../Components/FileList';
-import FeedBack from '../Components/FeedBack';
-import UpsideGray from '../Components/UpsideGray';
+import DiscreteSlider from './Slider';
+import FileList from './FileList';
+import FeedBack from './FeedBack';
+import UpsideGray from '../Common/UpsideGray';
 
 const CustomSlider = withStyles({
     root: {

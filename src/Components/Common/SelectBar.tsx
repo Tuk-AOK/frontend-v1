@@ -11,7 +11,7 @@ import ColorTabs from './ColorTab';
 import MainProfile from './Profile';
 import { Container } from '@mui/material';
 import { useSelector } from 'react-redux';
-import { RootState } from './Redux/Store';
+import { RootState } from '../../Stores/Store';
 import axios from 'axios';
 
 interface BranchResponse {

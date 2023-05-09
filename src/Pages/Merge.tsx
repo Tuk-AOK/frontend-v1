@@ -4,14 +4,14 @@ import Box from '@mui/material/Box';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
 import styled from 'styled-components';
 import { Typography} from '@mui/material';
-import ImgList from '../Components/ImgList';
-import BasicList from '../Components/List';
-import Profile from '../Components/Profile';
-import SelectBar from '../Components/SelectBar';
-import UpsideGray from '../Components/UpsideGray';
+import ImgList from '../Components/Main/ImgList';
+import BasicList from '../Components/Common/List';
+import Profile from '../Components/Common/Profile';
+import SelectBar from '../Components/Common/SelectBar';
+import UpsideGray from '../Components/Common/UpsideGray';
 import MergeComponent from '../Components/Merge/MergeComp';
-import ProjectSelect from '../Components/ProjectSelect';
-import MergeModal from '../Components/MergeModal_Button';
+import ProjectSelect from '../Components/Common/ProjectSelect';
+import MergeModal from '../Components/Merge/MergeModal_Button';
 //import MergeModal from '../Components/MergeIconModal';
 
 

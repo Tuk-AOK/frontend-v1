@@ -7,7 +7,6 @@ import { borderRadius } from '@mui/system';
 import ClearIcon from '@mui/icons-material/Clear';
 import {PropsWithChildren} from "react";
 import styled from "styled-components";
-import BasicModal from "./Modalcom";
 
 interface ModalDefaultType{
     onClickToggleModal: () => void;

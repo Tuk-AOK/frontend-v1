@@ -3,18 +3,18 @@ import {useCallback} from 'react';
 import Box from '@mui/material/Box';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
 import { Typography, Button,IconButton } from '@mui/material';
-import BasicList from '../Components/List';
-import Profile from '../Components/Profile';
+import BasicList from '../Components/Common/List';
+import Profile from '../Components/Common/Profile';
 import styled from 'styled-components';
-import SelectBar from '../Components/SelectBar';
+import SelectBar from '../Components/Common/SelectBar';
 import EditIcon from '@mui/icons-material/Edit';
-import DiscreteSlider from '../Components/Slider';
-import DateSlide from '../Components/DateSlider';
-import FileList from '../Components/FileList';
-import FeedBack from '../Components/FeedBack';
-import UpsideGray from '../Components/UpsideGray';
-import ProjectSelect from '../Components/ProjectSelect';
-import ApplyModal from '../Components/ApplyModal'; 
+import DiscreteSlider from '../Components/LogHistory/Slider';
+import DateSlide from '../Components/LogHistory/DateSlider';
+import FileList from '../Components/LogHistory/FileList';
+import FeedBack from '../Components/LogHistory/FeedBack';
+import UpsideGray from '../Components/Common/UpsideGray';
+import ProjectSelect from '../Components/Common/ProjectSelect';
+import ApplyModal from '../Components/LogHistory/ApplyModal'; 
 
 interface props{
     backgroundcolor?: string;

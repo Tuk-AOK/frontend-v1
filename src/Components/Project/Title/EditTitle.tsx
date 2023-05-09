@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { TodoContext, ITitle as EditTodoProp } from "../../contexts/TitleContext";
+import { TodoContext, ITitle as EditTodoProp } from "../contexts/TitleContext";
 import { Box, TextField } from '@mui/material';
 import Button from '@mui/material/Button';
 import CheckIcon from '@mui/icons-material/Check'

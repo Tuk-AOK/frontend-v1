@@ -11,7 +11,7 @@ import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
 import { createTheme, MuiThemeProvider } from "@material-ui/core";
 import MenuIcon from '@mui/icons-material/Menu';
-import Project from '../Pages/Project';
+import Project from '../../Pages/Project';
 import { useNavigate } from 'react-router-dom';
 
 export default function MenuListComposition() {

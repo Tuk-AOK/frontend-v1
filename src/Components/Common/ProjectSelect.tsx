@@ -3,10 +3,10 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import { useNavigate } from 'react-router-dom';
 import styled, {css} from "styled-components";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import DDProjectModal from '../Components/DDProjectModal';
+import DDProjectModal from './DDProjectModal';
 import { useDispatch, useSelector } from 'react-redux';
-import { setProjectUuid } from './Redux/ProjectSlice';
-import { RootState } from './Redux/Store';
+import { setProjectUuid } from '../../Hooks/ProjectSlice';
+import { RootState } from '../../Stores/Store';
 import axios from 'axios';
 
 

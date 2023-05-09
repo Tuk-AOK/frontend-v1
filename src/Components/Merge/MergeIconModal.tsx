@@ -2,12 +2,9 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
-import { borderRadius } from '@mui/system';
-import ClearIcon from '@mui/icons-material/Clear';
 import {PropsWithChildren} from "react";
 import styled from "styled-components";
-import BasicModal from "./Modalcom";
-import DragDrop from './Merge/DragDrop2';
+import DragDrop from './DragDrop2';
 import ErrorIcon from '@mui/icons-material/Error';
 
 interface ModalDefaultType{

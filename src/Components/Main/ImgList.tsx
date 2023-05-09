@@ -7,9 +7,9 @@ import ImageListItem from '@mui/material/ImageListItem';
 import { Box, shadows, BoxProps } from '@mui/system';
 import { wrap } from 'module';
 import { useDispatch, useSelector } from 'react-redux';
-import { setUuid } from './Redux/UserSlice';
-import { setProjectUuid } from './Redux/ProjectSlice';
-import { RootState } from './Redux/Store';
+import { setUuid } from '../../Hooks/UserSlice';
+import { setProjectUuid } from '../../Hooks/ProjectSlice';
+import { RootState } from '../../Stores/Store';
 
 
 const commonStyles = {
