@@ -211,8 +211,12 @@ export default function BasicSelect() {
         setCurrentProject(response.data.data.name);
         console.log("저장상태 : ", currentProject)
       })
+      .catch((error)=> {
+        console.log("현재 위치한 프로젝트가 없음");
+        console.log(error);
+      })
     })();
-  })
+  },[currentProject]);
   
 
   const [projects, setProjects] = useState<Project[]>([]);

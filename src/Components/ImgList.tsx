@@ -76,12 +76,12 @@ export default function ImgList() {
           <Box sx={{...commonStyles, borderRadius:3, border:'transparent', boxShadow: 4}} onClick={() => (clickEvent())}>
               <ImageListItem key={project.uuid}>
               <img
-              src={`${"img/crepeimg.png"}/?w=164&h=164&fit=crop&auto=format`}
-              srcSet={`${"img/crepeimg.png"}/?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              src={"/img/crepeimg.png"}
+              srcSet={process.env.PUBLIC_URL + `/img/crepeimg.png/?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
               alt={project.name}
               loading="lazy"
-              
               />
+
               <Box sx={{display:'flex', justifyContent:'center', fontWeight:'bold', fontSize:'20px', marginBottom:0.1}}>{project.name}</Box>
               <Box sx={{display:'flex', justifyContent:'center', fontSize:'13px', color:'darkgray'}}>23.01.03 08:01:22</Box>
           </ImageListItem>
