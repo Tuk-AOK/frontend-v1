@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import { reverse } from 'dns';
 import SelectBar from '../Components/Common/SelectBar';
 import EditIcon from '@mui/icons-material/Edit';
-import TextField2 from '../Components/Project/TextField';
+import TextField2 from '../Components/Common/TextField';
 import TitleList from '../Components/Project/Title/TitleList';
 import ProjectSelect from '../Components/Common/ProjectSelect';
 import IosShareSharpIcon from '@mui/icons-material/IosShareSharp';
