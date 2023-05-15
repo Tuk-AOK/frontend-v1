@@ -6,14 +6,14 @@ import React, {
   useState,
   useEffect
 } from "react";
-import LottieUpload from "../LottieUpload";
+import LottieUpload from "../Upload/LottieUpload";
 import "./Merge.scss";
 import styled from 'styled-components';
 import styles from './Merge.module.css';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import { Button } from '@mui/material';
 import ErrorIcon from '@mui/icons-material/Error';
-import MergeModal from '../MergeIconModal';
+import MergeModal from './MergeIconModal';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Merge = () => {

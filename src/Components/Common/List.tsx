@@ -8,11 +8,10 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
-import CreateBtn from './CreateBtn';
-import BranchModal from './ProjectModal';
+import BranchModal from './BranchModal';
 import { useDispatch, useSelector } from 'react-redux';
-import { setBranchUuid } from './Redux/BranchSlice';
-import { RootState } from './Redux/Store';
+import { setBranchUuid } from '../../Hooks/BranchSlice';
+import { RootState } from '../../Stores/Store';
 import axios from 'axios';
 
 

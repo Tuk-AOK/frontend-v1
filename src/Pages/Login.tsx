@@ -10,7 +10,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import SignIn from '../Components/Logincom2';
+import SignIn from '../Components/Login/Logincom';
 import styled from 'styled-components';
 import background_dark from '../Images/background_dark.png';
 

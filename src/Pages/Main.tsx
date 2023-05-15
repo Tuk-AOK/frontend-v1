@@ -1,17 +1,16 @@
 import * as React from 'react';
 import {useState, useCallback} from "react";
-import BasicModal from '../Components/Modalcom';
 import Box from '@mui/material/Box';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
 import styled from 'styled-components';
 import { Typography} from '@mui/material';
-import ImgList from '../Components/ImgList';
-import BasicList from '../Components/List';
-import Profile from '../Components/Profile';
-import UpsideGray from '../Components/UpsideGray';
-import MainModal from '../Components/MainModal';
-import ProjectSelect from '../Components/ProjectSelect';
-import NonSelectBar from '../Components/nonSelectBar';
+import ImgList from '../Components/Main/ImgList';
+import BasicList from '../Components/Common/List';
+import Profile from '../Components/Common/Profile';
+import UpsideGray from '../Components/Common/UpsideGray';
+import MainModal from '../Components/Main/MainModal';
+import ProjectSelect from '../Components/Common/ProjectSelect';
+import NonSelectBar from '../Components/Common/nonSelectBar';
 
 
 export default function Main() {

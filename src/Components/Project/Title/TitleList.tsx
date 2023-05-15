@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useReducer, useState } from "react";
 import EditTitle from "./EditTitle";
 import Title from "./Title";
-import { TodoContext, titleReducer, TitleState } from "../../contexts/TitleContext";
+import { TodoContext, titleReducer, TitleState } from "../contexts/TitleContext";
 
 const initState: TitleState = {
   titles: [

@@ -5,7 +5,7 @@ import React, {
   useState,
   useEffect
 } from "react";
-import LottieUpload from "../LottieUpload";
+import LottieUpload from "../Upload/LottieUpload";
 import "./Merge.scss";
 import styled from 'styled-components';
 import styles from './Merge.module.css';

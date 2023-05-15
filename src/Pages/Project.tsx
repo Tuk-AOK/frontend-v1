@@ -2,24 +2,24 @@ import * as React from 'react';
 import { useEffect,useState } from "react";
 import Box from '@mui/material/Box';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
-import UpsideGray from '../Components/UpsideGray';
+import UpsideGray from '../Components/Common/UpsideGray';
 import { Typography, Button, TextField } from '@mui/material';
-import BasicSelect from '../Components/ProjectSelect';
-import BasicList from '../Components/List';
+import BasicSelect from '../Components/Common/ProjectSelect';
+import BasicList from '../Components/Common/List';
 import AddIcon from '@mui/icons-material/Add';
-import Profile from '../Components/Profile';
+import Profile from '../Components/Common/Profile';
 import styled from 'styled-components';
 import { reverse } from 'dns';
-import SelectBar from '../Components/SelectBar';
+import SelectBar from '../Components/Common/SelectBar';
 import EditIcon from '@mui/icons-material/Edit';
-import TextField2 from '../Components/TextField2';
-import TitleList from '../Components/Title/TitleList';
-import ProjectSelect from '../Components/ProjectSelect';
+import TextField2 from '../Components/Common/TextField';
+import TitleList from '../Components/Project/Title/TitleList';
+import ProjectSelect from '../Components/Common/ProjectSelect';
 import IosShareSharpIcon from '@mui/icons-material/IosShareSharp';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../Components/Redux/Store';
-import '../Components/Logscss.scss';
+import { RootState } from '../Stores/Store';
+import '../Components/Project/Logscss.scss';
 
 
 interface props{

@@ -1,7 +1,7 @@
 import EditIcon from '@mui/icons-material/Edit';
 import Button from '@mui/material/Button';
 import { useContext } from "react";
-import { TodoContext, ITitle } from "../../contexts/TitleContext";
+import { TodoContext, ITitle } from "../contexts/TitleContext";
 import { Box, Typography } from '@mui/material';
 
 const Title = (props: ITitle) => {

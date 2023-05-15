@@ -1,7 +1,7 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import userReducer from './UserSlice';
-import ProjectReducer from './ProjectSlice'; 
-import BranchReducer from './BranchSlice'
+import userReducer from '../Hooks/UserSlice';
+import ProjectReducer from '../Hooks/ProjectSlice'; 
+import BranchReducer from '../Hooks/BranchSlice'
 import {persistReducer} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 //localStorage에 저장
