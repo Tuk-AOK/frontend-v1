@@ -172,14 +172,13 @@
   position: relative;
 }
 
-.imagePreview2{
+.captureImagePreview{
   margin-right: 1rem; //가로로 했을 때 간격
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border: none;
   border-radius: 10px;
   //box-shadow: 2px 4px 8px;
-  background-color: #FFF2F2;
   display: table;
   align-items: center;
   position: relative;

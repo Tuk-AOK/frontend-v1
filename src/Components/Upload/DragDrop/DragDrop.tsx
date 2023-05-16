@@ -12,6 +12,7 @@ import styled from 'styled-components';
 import styles from './DragDrop.module.css';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import axios from 'axios'; 
+import html2canvas from 'html2canvas';
 
 
 
@@ -107,6 +108,7 @@ const DragDrop = () => {
   const fileList: IFileList = {
     imageFiles: fileobjects
   }
+
 
 
   const createLog = async() => {
@@ -316,6 +318,31 @@ const DragDrop = () => {
   /*------------- 리스트 드래그 앤 드랍 관련 함수 ------------*/
   console.log("업로드 파일 목록",fileobjects)
 
+  /*------------- 미리보기 이미지 캡쳐 관련 함수 ------------*/
+    const capturePreviewImg = async() => {
+      const canvas = document.getElementById("capturePreview") as HTMLCanvasElement;
+      let url = "";
+      html2canvas(canvas).then(async(canvasdata) => {
+        //url 출력되는 형식이 base64 형식
+        //url = await canvasdata.toDataURL("image/png").spilt(",")[1]
+        url = await canvasdata.toDataURL("image/png")
+        console.log("만들어진 URL : ", url)
+
+        //이 만들어진 url 데이터를 axios를 통해 같이 전송
+        //밑에는 사진 파일 전송을 위한 axios가 같이 들어갈 예정
+      })
+      
+    }
+  
+
+  /*------------- 미리보기 이미지 캡쳐 관련 함수 ------------*/
+  
+  const clickEvent = () => {
+    capturePreviewImg()
+    createLog()
+  }
+
+
   return (
     <Backgrdiv>
     <div className="inlineblockDiv">
@@ -327,7 +354,8 @@ const DragDrop = () => {
             <div className="PreviewTextdiv">
             preview
             </div>
-            <div className="imagePreview"> 
+            <div className="imagePreview">
+              <div id="capturePreview" className="captureImagePreview">
                 {fileobjects.length > 0 && fileobjects.map((file: IFileTypes, index: number)=> {
                   const {
                     id,
@@ -343,6 +371,7 @@ const DragDrop = () => {
                     </div>
                   );
                 })}
+              </div>
             </div>
           </div>
 
@@ -370,13 +399,7 @@ const DragDrop = () => {
             </div>
             </div>
             
-            {/* <input
-              type="file"
-              id="fileUpload"
-              style={{display: "none"}}
-              multiple={true}
-              onChange={onChangeFiles}
-            /> */}
+            
             <label 
               className={isDragging? "DragDrop-File-Dragging" : "DragDrop-Files1"}
               htmlFor="fileUpload"
@@ -438,7 +461,7 @@ const DragDrop = () => {
     </div>
     <Commentdiv type="text" value={msg} onChange={(event)=>setMsg(event.target.value)}/>
     <Btndiv>
-      <ApplyBtn onClick={createLog}>apply</ApplyBtn>
+      <ApplyBtn onClick={clickEvent}>apply</ApplyBtn>
     </Btndiv>
     </Backgrdiv>
   );

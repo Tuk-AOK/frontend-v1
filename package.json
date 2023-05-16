@@ -55,6 +55,7 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/bootstrap": "^5.2.6",
+    "@types/html2canvas": "^1.0.0",
     "@types/http-proxy-middleware": "^1.0.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
