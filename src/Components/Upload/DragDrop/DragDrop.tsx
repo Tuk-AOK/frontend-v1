@@ -322,14 +322,27 @@ const DragDrop = () => {
     const capturePreviewImg = async() => {
       const canvas = document.getElementById("capturePreview") as HTMLCanvasElement;
       let url = "";
+      let urlData = "";
       html2canvas(canvas).then(async(canvasdata) => {
         //url 출력되는 형식이 base64 형식
-        //url = await canvasdata.toDataURL("image/png").spilt(",")[1]
+        urlData = await canvasdata.toDataURL("image/png").split(",")[1]
         url = await canvasdata.toDataURL("image/png")
         console.log("만들어진 URL : ", url)
-
+        console.log("uri만 뽑아오기 : ", urlData)
         //이 만들어진 url 데이터를 axios를 통해 같이 전송
         //밑에는 사진 파일 전송을 위한 axios가 같이 들어갈 예정
+
+        const array = [] as any;
+        for(var i = 0; i < urlData.length; i++ ){
+          array.push(urlData.charCodeAt(i));
+        }
+
+        console.log(array);
+
+        const fileBlob = new Blob([new ArrayBuffer(array)], {type: 'image/png'});
+        const imgfile = new File([fileBlob], "logCaptureImg.png");
+
+        console.log(imgfile);
       })
       
     }
@@ -339,7 +352,7 @@ const DragDrop = () => {
   
   const clickEvent = () => {
     capturePreviewImg()
-    createLog()
+    //createLog()
   }
 
 
